@@ -1,0 +1,13 @@
+{
+  "feature": "live-tracking",
+  "headline": ["Հաճախորդը գիտի,", "թե որտեղ է պատվերը"],
+  "subline": "Կենդանի հետևում՝ առանց զանգերի",
+  "back": "screens/10-order-history.png",
+  "front": "screens/09-tracking-delivery.png",
+  "badge": {"file": "screens/02-product.png", "crop": [80, 0, 540, 460]},
+  "cards": [
+    {"title": "Նոր պատվեր", "sub": "Delivery · Komitas Ave", "color": "blue", "icon": "bell"},
+    {"title": "Պատրաստ է", "sub": "Պատվեր #238 · 9 300 ֏", "color": "green", "icon": "check"},
+    {"title": "Ճանապարհին է", "sub": "Առաքիչը կլինի 12 րոպեից", "color": "amber", "icon": "bike"}
+  ]
+}

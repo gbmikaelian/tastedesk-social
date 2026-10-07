@@ -1,0 +1,28 @@
+{
+  "notes": "One feature per day, in order. Facts in 'brief' are the only claims allowed in the post. 'screens' are suggestions; if empty, use the cards-only layout (no front/back).",
+  "features": [
+    {"id": "live-tracking", "side": "customer", "brief": "Customers follow every order live: Accepted, Cooking, Ready, Out for delivery, Delivered. Fewer 'where is my order' calls.", "front": "screens/09-tracking-delivery.png", "back": "screens/10-order-history.png"},
+    {"id": "branded-site", "side": "customer", "brief": "Every restaurant gets its own branded ordering site at <slug>.tastedesk.am with its photos, address and live open/closed status. No aggregator branding, customers order directly from the restaurant.", "front": "screens/01-menu.png", "back": "screens/02-product.png", "badge": {"file": "screens/02-product.png", "crop": [80, 0, 540, 460]}},
+    {"id": "live-order-board", "side": "restaurant", "brief": "Restaurant staff see all incoming orders on one live order board and move them through statuses with one tap; the customer's tracking page updates instantly.", "front": null, "back": null},
+    {"id": "delivery-pickup-dinein", "side": "customer", "brief": "One app for delivery, pickup (takeout) and dine-in. Customer picks how they get the order at checkout; pickup shows the restaurant address and ready time.", "front": "screens/04-checkout-takeout-payment.png", "back": "screens/05-checkout-delivery.png"},
+    {"id": "auto-printing", "side": "restaurant", "brief": "Kitchen and cashier stations. Every order automatically prints a receipt at the right station, so the kitchen never misses a ticket.", "front": null, "back": null},
+    {"id": "payments", "side": "customer", "brief": "Online payments with AmeriaBank, Arca, Idram, Telcell, plus cash. Customer chooses at checkout.", "front": "screens/04-checkout-takeout-payment.png", "back": null},
+    {"id": "zero-setup-fee", "side": "business", "brief": "0 dram setup fee. The restaurant pays only when the app brings orders.", "front": null, "back": null},
+    {"id": "address-autocomplete", "side": "customer", "brief": "Checkout address autocomplete with a map pin, plus entrance, floor, apartment and courier phone fields, so couriers find the door the first time.", "front": "screens/06-address-autocomplete.png", "back": "screens/05-checkout-delivery.png"},
+    {"id": "table-qr", "side": "restaurant", "brief": "Table map with live table statuses and a QR code on every table: guests scan, see the menu and order from their phone.", "front": null, "back": null},
+    {"id": "menu-product-pages", "side": "customer", "brief": "Menu with categories and photo product pages, ingredients, stock left, and a note for the kitchen on every item.", "front": "screens/02-product.png", "back": "screens/01-menu.png"},
+    {"id": "iiko-integration", "side": "business", "brief": "iiko integration: menu syncs from iiko, orders are pushed into iiko, and items on the iiko stop list are hidden automatically.", "front": null, "back": null},
+    {"id": "saved-addresses-history", "side": "customer", "brief": "Customers sign in with their phone number; saved addresses and full order history let them reorder in seconds.", "front": "screens/10-order-history.png", "back": "screens/07-account.png"},
+    {"id": "staff-roles", "side": "restaurant", "brief": "Staff roles: waiter, manager, courier, storekeeper, marketer. Everyone sees only what they need.", "front": null, "back": null},
+    {"id": "delivery-zones", "side": "customer", "brief": "Delivery zones and delivery fee by distance, shown to the customer at checkout before they order.", "front": "screens/05-checkout-delivery.png", "back": null},
+    {"id": "courier-role", "side": "restaurant", "brief": "Courier role: couriers get their own view of orders ready for delivery and mark them out for delivery and delivered.", "front": null, "back": null},
+    {"id": "opening-hours", "side": "customer", "brief": "Opening hours: the site shows open/closed automatically, e.g. 'Open until 05:00', so customers never order from a closed kitchen.", "front": "screens/01-menu.png", "back": null},
+    {"id": "staff-phone-orders", "side": "restaurant", "brief": "Staff can enter phone and walk-in orders themselves, so every channel lands on the same board.", "front": null, "back": null},
+    {"id": "loyalty-points", "side": "customer", "brief": "Loyalty points: customers earn points on orders and redeem them on later orders.", "front": null, "back": null},
+    {"id": "dashboard", "side": "restaurant", "brief": "A dashboard with the restaurant's orders and sales at a glance.", "front": null, "back": null},
+    {"id": "all-channels", "side": "business", "brief": "All channels in one place: website orders, table QR orders, phone and walk-in orders, all on one board.", "front": null, "back": null},
+    {"id": "menu-management", "side": "restaurant", "brief": "Restaurants manage products, categories and ingredients themselves; changes are live on the site immediately.", "front": null, "back": null},
+    {"id": "seo-pages", "side": "customer", "brief": "SEO-ready pages for the restaurant and every product, so the restaurant's menu can be found on Google.", "front": "screens/01-menu.png", "back": null},
+    {"id": "kitchen-flow", "side": "restaurant", "brief": "Kitchen flow: orders go from accepted to cooking to ready in a clear sequence, with tickets printed at the kitchen station.", "front": null, "back": null}
+  ]
+}

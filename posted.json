@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "date": "2026-10-07",
+      "feature": "live-tracking",
+      "image": "posts/2026-10-07-live-tracking.png",
+      "spec": "specs/2026-10-07-live-tracking.json",
+      "buffer": {"instagram": "6ac691e085762210c9f2aa75", "facebook": "6ac691ed887a55884cd5e877"},
+      "caption_hook": "«Որտե՞ղ է իմ պատվերը» — այս զանգը այլևս չի լինի։"
+    }
+  ]
+}
