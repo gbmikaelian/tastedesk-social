@@ -5,8 +5,22 @@
       "feature": "live-tracking",
       "image": "posts/2026-10-07-live-tracking.png",
       "spec": "specs/2026-10-07-live-tracking.json",
-      "buffer": {"instagram": "6ac691e085762210c9f2aa75", "facebook": "6ac691ed887a55884cd5e877"},
+      "buffer": {
+        "instagram": "6ac691e085762210c9f2aa75",
+        "facebook": "6ac691ed887a55884cd5e877"
+      },
       "caption_hook": "«Որտե՞ղ է իմ պատվերը» — այս զանգը այլևս չի լինի։"
+    },
+    {
+      "date": "2026-10-08",
+      "feature": "branded-site",
+      "image": "posts/2026-10-08-branded-site.png",
+      "spec": "specs/2026-10-08-branded-site.json",
+      "buffer": {
+        "instagram": "6ac7af75e63932e2c5a7490c",
+        "facebook": "6ac7af82e63932e2c5a74a3f"
+      },
+      "caption_hook": "Հաճախորդը պատվիրում է ագրեգատորից ու հիշում նրա անունը, ոչ թե ձերը 🤔"
     }
   ]
 }
