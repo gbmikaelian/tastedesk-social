@@ -1,0 +1,13 @@
+{
+  "feature": "branded-site",
+  "headline": ["Ձեր ռեստորանի", "սեփական կայքը"],
+  "subline": "burgery.tastedesk.am՝ առանց ագրեգատորի",
+  "front": "screens/01-menu.png",
+  "back": "screens/02-product.png",
+  "badge": {"file": "screens/02-product.png", "crop": [80, 0, 540, 460]},
+  "cards": [
+    {"title": "Burgery-ն բաց է", "sub": "Արշակունյաց պող. 6", "color": "green", "icon": "clock"},
+    {"title": "Նոր պատվեր կայքից", "sub": "Classic Beef Burger 2 800 ֏", "color": "blue", "icon": "bell"},
+    {"title": "Առանց միջնորդի", "sub": "Հաճախորդը պատվիրում է ձեզնից", "color": "purple", "icon": "check"}
+  ]
+}
