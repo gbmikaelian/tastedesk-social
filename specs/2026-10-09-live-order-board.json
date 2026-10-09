@@ -1,0 +1,10 @@
+{
+  "feature": "live-order-board",
+  "headline": ["Բոլոր պատվերները", "մեկ վահանակում"],
+  "subline": "Մեկ հպում, և հաճախորդն արդեն տեսնում է",
+  "cards": [
+    {"title": "Նոր պատվեր #241", "sub": "Double Cheeseburger · 3 600 ֏", "color": "blue", "icon": "bell"},
+    {"title": "#239՝ պատրաստվում է", "sub": "Կարգավիճակը փոխվեց մեկ հպումով", "color": "amber", "icon": "clock"},
+    {"title": "Հաճախորդը տեսավ", "sub": "Հետևման էջը թարմացավ ակնթարթորեն", "color": "green", "icon": "check"}
+  ]
+}
