@@ -21,6 +21,17 @@
         "facebook": "6ac7af82e63932e2c5a74a3f"
       },
       "caption_hook": "Հաճախորդը պատվիրում է ագրեգատորից ու հիշում նրա անունը, ոչ թե ձերը 🤔"
+    },
+    {
+      "date": "2026-10-09",
+      "feature": "live-order-board",
+      "image": "posts/2026-10-09-live-order-board.png",
+      "spec": "specs/2026-10-09-live-order-board.json",
+      "buffer": {
+        "instagram": "6ac900fdea458ceb9a4f1701",
+        "facebook": "6ac9010aea458ceb9a4f1853"
+      },
+      "caption_hook": "Պատվերները կորչում են մեսենջերների ու թղթերի մեջ 📋"
     }
   ]
 }
