@@ -1,0 +1,12 @@
+{
+  "feature": "delivery-pickup-dinein",
+  "headline": ["Մեկ հավելված,", "երեք տարբերակ"],
+  "subline": "Առաքում, վերցնել տեղից կամ ճաշել սրահում",
+  "front": "screens/04-checkout-takeout-payment.png",
+  "back": "screens/05-checkout-delivery.png",
+  "cards": [
+    {"title": "Առաքում հասցեով", "sub": "Double Cheeseburger 3 600 ֏", "color": "blue", "icon": "bike"},
+    {"title": "Կվերցնեմ ինքս", "sub": "Արշակունյաց պող. 6", "color": "green", "icon": "pin"},
+    {"title": "Ճաշ սրահում", "sub": "Pepperoni Pizza 3 900 ֏", "color": "amber", "icon": "check"}
+  ]
+}
