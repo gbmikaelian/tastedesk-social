@@ -32,6 +32,17 @@
         "facebook": "6ac9010aea458ceb9a4f1853"
       },
       "caption_hook": "Պատվերները կորչում են մեսենջերների ու թղթերի մեջ 📋"
+    },
+    {
+      "date": "2026-10-12",
+      "feature": "delivery-pickup-dinein",
+      "image": "posts/2026-10-12-delivery-pickup-dinein.png",
+      "spec": "specs/2026-10-12-delivery-pickup-dinein.json",
+      "buffer": {
+        "instagram": "6accf5a7e506958eb5c43dbe",
+        "facebook": "6accf5b1e506958eb5c43ed8"
+      },
+      "caption_hook": "Մեկն ուզում է առաքում, մյուսը՝ գալ վերցնել, երրորդն արդեն նստած է սրահում 🍔"
     }
   ]
 }
