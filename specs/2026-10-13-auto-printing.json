@@ -1,0 +1,10 @@
+{
+  "feature": "auto-printing",
+  "headline": ["Ամեն պատվեր", "տպվում է ինքնաշխատ"],
+  "subline": "Խոհանոցն այլևս ոչ մի տոմս բաց չի թողնի",
+  "cards": [
+    {"title": "Նոր պատվեր #312", "sub": "Crispy Chicken Burger · 2 600 ֏", "color": "blue", "icon": "bell"},
+    {"title": "Խոհանոց՝ տոմսը տպվեց", "sub": "#312 · Crispy Chicken Burger, Coca-Cola", "color": "amber", "icon": "printer"},
+    {"title": "Դրամարկղ՝ կտրոնը տպվեց", "sub": "Ամեն կտրոն հենց իր կայանում", "color": "green", "icon": "check"}
+  ]
+}
