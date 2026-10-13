@@ -43,6 +43,17 @@
         "facebook": "6accf5b1e506958eb5c43ed8"
       },
       "caption_hook": "Մեկն ուզում է առաքում, մյուսը՝ գալ վերցնել, երրորդն արդեն նստած է սրահում 🍔"
+    },
+    {
+      "date": "2026-10-13",
+      "feature": "auto-printing",
+      "image": "posts/2026-10-13-auto-printing.png",
+      "spec": "specs/2026-10-13-auto-printing.json",
+      "buffer": {
+        "instagram": "6ace470926f0b7a27e9ad921",
+        "facebook": "6ace471426f0b7a27e9adac5"
+      },
+      "caption_hook": "Պատվերը եկավ, իսկ խոհանոցը չիմացավ 😬"
     }
   ]
 }
