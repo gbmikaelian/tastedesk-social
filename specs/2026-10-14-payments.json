@@ -1,0 +1,11 @@
+{
+  "feature": "payments",
+  "headline": ["Վճարում՝ ինչպես", "հարմար է հաճախորդին"],
+  "subline": "AmeriaBank, Arca, Idram, Telcell կամ կանխիկ",
+  "front": "screens/04-checkout-takeout-payment.png",
+  "cards": [
+    {"title": "Վճարված է Arca-ով", "sub": "Double Cheeseburger 3 600 ֏", "color": "green", "icon": "card"},
+    {"title": "Վճարված է Idram-ով", "sub": "Pepperoni Pizza 3 900 ֏", "color": "blue", "icon": "check"},
+    {"title": "Ընտրված է կանխիկ", "sub": "Classic Beef Burger 2 800 ֏", "color": "amber", "icon": "card"}
+  ]
+}
