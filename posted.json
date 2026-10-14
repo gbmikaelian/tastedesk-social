@@ -54,6 +54,17 @@
         "facebook": "6ace471426f0b7a27e9adac5"
       },
       "caption_hook": "Պատվերը եկավ, իսկ խոհանոցը չիմացավ 😬"
+    },
+    {
+      "date": "2026-10-14",
+      "feature": "payments",
+      "image": "posts/2026-10-14-payments.png",
+      "spec": "specs/2026-10-14-payments.json",
+      "buffer": {
+        "instagram": "6acf98a96b5b6837d3416d51",
+        "facebook": "6acf98b638098deaf9e5ae31"
+      },
+      "caption_hook": "Հաճախորդը պատրաստ է պատվիրել, բայց կանխիկ չունի 💳"
     }
   ]
 }
