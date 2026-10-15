@@ -1,0 +1,10 @@
+{
+  "feature": "zero-setup-fee",
+  "headline": ["0 ֏ միացման վճար", "Վճար՝ միայն պատվերից"],
+  "subline": "Ծախս չկա, քանի դեռ հավելվածը պատվեր չի բերել",
+  "cards": [
+    {"title": "Միացում՝ 0 ֏", "sub": "Burgery-ի կայքը պատրաստ է, առանց վճարի", "color": "green", "icon": "check"},
+    {"title": "Նոր պատվեր #118", "sub": "Double Cheeseburger · 3 600 ֏", "color": "blue", "icon": "bell"},
+    {"title": "Վճարում եք միայն հիմա", "sub": "Երբ հավելվածը ձեզ պատվեր է բերում", "color": "amber", "icon": "card"}
+  ]
+}
