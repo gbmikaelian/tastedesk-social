@@ -65,6 +65,17 @@
         "facebook": "6acf98b638098deaf9e5ae31"
       },
       "caption_hook": "Հաճախորդը պատրաստ է պատվիրել, բայց կանխիկ չունի 💳"
+    },
+    {
+      "date": "2026-10-15",
+      "feature": "zero-setup-fee",
+      "image": "posts/2026-10-15-zero-setup-fee.png",
+      "spec": "specs/2026-10-15-zero-setup-fee.json",
+      "buffer": {
+        "instagram": "6ad0e9f252c687f7505591e0",
+        "facebook": "6ad0e9fcb64fbd45c4f88874"
+      },
+      "caption_hook": "Նոր համակարգ միացնելը սովորաբար սկսվում է մեծ հաշվից 💸"
     }
   ]
 }
