@@ -76,6 +76,17 @@
         "facebook": "6ad0e9fcb64fbd45c4f88874"
       },
       "caption_hook": "Նոր համակարգ միացնելը սովորաբար սկսվում է մեծ հաշվից 💸"
+    },
+    {
+      "date": "2026-10-16",
+      "feature": "address-autocomplete",
+      "image": "posts/2026-10-16-address-autocomplete.png",
+      "spec": "specs/2026-10-16-address-autocomplete.json",
+      "buffer": {
+        "instagram": "6ad23b95193eb243e2c07083",
+        "facebook": "6ad23ba1193eb243e2c07386"
+      },
+      "caption_hook": "Առաքիչը կանգնած է շենքի մոտ ու զանգում է՝ «Ո՞ր մուտքն է» 📞"
     }
   ]
 }
