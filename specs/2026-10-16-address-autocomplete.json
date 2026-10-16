@@ -1,0 +1,12 @@
+{
+  "feature": "address-autocomplete",
+  "headline": ["Առաքիչը գտնում է", "դուռն առաջին անգամից"],
+  "subline": "Հասցե քարտեզով, մուտք, հարկ, բնակարան",
+  "front": "screens/06-address-autocomplete.png",
+  "back": "screens/05-checkout-delivery.png",
+  "cards": [
+    {"title": "Հասցեն գտնված է", "sub": "Հյուսիսային պող., Երևան", "color": "blue", "icon": "pin"},
+    {"title": "Մուտք 2, հարկ 5", "sub": "Բնակարան 18, նշված է", "color": "amber", "icon": "check"},
+    {"title": "Առաքիչը դռան մոտ է", "sub": "Double Cheeseburger 3 600 ֏", "color": "green", "icon": "bike"}
+  ]
+}
