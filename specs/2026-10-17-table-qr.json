@@ -1,0 +1,11 @@
+{
+  "feature": "table-qr",
+  "theme": "mint",
+  "headline": ["Պատվերը գալիս է", "հենց սեղանից"],
+  "subline": "Հյուրը չի սպասում մատուցողին",
+  "cards": [
+    {"title": "Սեղան 5՝ QR-ը սկանավորվեց", "sub": "Pepperoni Pizza, Latte · 5 900 ֏", "color": "blue", "icon": "qr"},
+    {"title": "Նոր պատվեր՝ սեղան 5", "sub": "Կայքի պատվերների հետ՝ նույն բորդին", "color": "amber", "icon": "bell"},
+    {"title": "Սեղան 5՝ վճարված է", "sub": "Idram-ով, հենց հյուրի հեռախոսից", "color": "green", "icon": "card"}
+  ]
+}
