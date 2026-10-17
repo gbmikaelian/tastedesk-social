@@ -64,18 +64,55 @@ def fit_font(text, weight, size, max_w, min_size=None):
     return font(weight, size)
 
 
-def background():
-    img = Image.new("RGBA", (W, H), (11, 18, 22, 255))
+THEMES = {
+    # name: top/bottom gradient, glow blobs, pattern, pattern rgba, headline line 1 / line 2, subline, badge fill / badge text
+    "night":  {"top": (11, 18, 22), "bottom": (11, 18, 22), "glows": [((380, 420, 1300, 1340), (34, 197, 150, 150)), ((-300, 700, 450, 1500), (30, 138, 116, 120))],
+               "pattern": "dots", "pat": (255, 255, 255, 18), "h1": (255, 255, 255), "h2": (52, 211, 153), "sub": (180, 200, 195), "bf": (52, 211, 153), "bt": (11, 18, 22)},
+    "ember":  {"top": (124, 32, 18), "bottom": (38, 10, 8), "glows": [((500, -200, 1400, 700), (251, 146, 60, 140)), ((-300, 800, 500, 1600), (220, 38, 38, 110))],
+               "pattern": "diagonal", "pat": (255, 255, 255, 14), "h1": (255, 255, 255), "h2": (253, 186, 116), "sub": (254, 215, 170), "bf": (253, 186, 116), "bt": (60, 15, 10)},
+    "ocean":  {"top": (12, 30, 66), "bottom": (6, 12, 30), "glows": [((450, 350, 1350, 1250), (59, 130, 246, 140)), ((-350, -150, 450, 650), (14, 165, 233, 90))],
+               "pattern": "grid", "pat": (255, 255, 255, 12), "h1": (255, 255, 255), "h2": (125, 211, 252), "sub": (191, 219, 254), "bf": (125, 211, 252), "bt": (6, 12, 30)},
+    "grape":  {"top": (46, 16, 101), "bottom": (17, 7, 40), "glows": [((400, 500, 1300, 1400), (168, 85, 247, 140)), ((-300, -100, 500, 700), (236, 72, 153, 90))],
+               "pattern": "rings", "pat": (255, 255, 255, 16), "h1": (255, 255, 255), "h2": (240, 171, 252), "sub": (221, 214, 254), "bf": (240, 171, 252), "bt": (30, 10, 60)},
+    "cream":  {"top": (255, 247, 235), "bottom": (250, 232, 210), "glows": [((450, 400, 1350, 1300), (251, 191, 36, 90)), ((-350, 800, 450, 1600), (249, 115, 22, 60))],
+               "pattern": "dots", "pat": (120, 70, 20, 26), "h1": (31, 23, 15), "h2": (194, 65, 12), "sub": (110, 85, 60), "bf": (31, 23, 15), "bt": (255, 247, 235)},
+    "mint":   {"top": (236, 253, 245), "bottom": (209, 250, 229), "glows": [((450, 450, 1350, 1350), (16, 185, 129, 80)), ((-300, -200, 500, 600), (56, 189, 248, 60))],
+               "pattern": "grid", "pat": (6, 78, 59, 18), "h1": (6, 47, 38), "h2": (5, 150, 105), "sub": (55, 95, 85), "bf": (6, 78, 59), "bt": (236, 253, 245)},
+    "graphite": {"top": (38, 38, 42), "bottom": (12, 12, 14), "glows": [((450, 450, 1350, 1350), (250, 204, 21, 90)), ((-300, 900, 400, 1600), (250, 204, 21, 50))],
+               "pattern": "diagonal", "pat": (255, 255, 255, 10), "h1": (255, 255, 255), "h2": (250, 204, 21), "sub": (212, 212, 216), "bf": (250, 204, 21), "bt": (20, 20, 22)},
+}
+
+
+def background(t):
+    img = Image.new("RGBA", (W, H))
+    d = ImageDraw.Draw(img)
+    for y in range(H):
+        k = y / (H - 1)
+        d.line([(0, y), (W, y)], fill=tuple(int(a + (b - a) * k) for a, b in zip(t["top"], t["bottom"])) + (255,))
     glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     gd = ImageDraw.Draw(glow)
-    gd.ellipse([380, 420, 1300, 1340], fill=(34, 197, 150, 150))
-    gd.ellipse([-300, 700, 450, 1500], fill=(30, 138, 116, 120))
+    for box, col in t["glows"]:
+        gd.ellipse(list(box), fill=col)
     img = Image.alpha_composite(img, glow.filter(ImageFilter.GaussianBlur(160)))
-    d = ImageDraw.Draw(img)
-    for x in range(30, W, 48):
-        for y in range(30, H, 48):
-            d.ellipse([x - 1.5, y - 1.5, x + 1.5, y + 1.5], fill=(255, 255, 255, 18))
-    return img
+    pat = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(pat)
+    c = t["pat"]
+    if t["pattern"] == "dots":
+        for x in range(30, W, 48):
+            for y in range(30, H, 48):
+                d.ellipse([x - 1.5, y - 1.5, x + 1.5, y + 1.5], fill=c)
+    elif t["pattern"] == "grid":
+        for x in range(0, W, 60):
+            d.line([(x, 0), (x, H)], fill=c, width=1)
+        for y in range(0, H, 60):
+            d.line([(0, y), (W, y)], fill=c, width=1)
+    elif t["pattern"] == "diagonal":
+        for x in range(-H, W, 36):
+            d.line([(x, 0), (x + H, H)], fill=c, width=2)
+    elif t["pattern"] == "rings":
+        for r in range(120, 1600, 70):
+            d.ellipse([W - 120 - r, 260 - r, W - 120 + r, 260 + r], outline=c, width=2)
+    return Image.alpha_composite(img, pat)
 
 
 def phone(src, width, crop_h, angle):
@@ -184,7 +221,8 @@ def badge(img, src, x, y):
 
 
 def render(spec, out):
-    img = background()
+    t = THEMES[spec.get("theme", "night")]
+    img = background(t)
     front, back = spec.get("front"), spec.get("back")
     cards = spec.get("cards", [])[:3]
 
@@ -209,16 +247,16 @@ def render(spec, out):
     y = 70
     for i, line in enumerate(lines[:2]):
         f = fit_font(line, 800, 62, W - 120)
-        draw_text(d, 60, y, line, f, (255, 255, 255) if i == 0 else (52, 211, 153))
+        draw_text(d, 60, y, line, f, t["h1"] if i == 0 else t["h2"])
         y += 78
     if spec.get("subline"):
-        draw_text(d, 60, y + 12, spec["subline"], fit_font(spec["subline"], 500, 32, W - 120), (180, 200, 195))
+        draw_text(d, 60, y + 12, spec["subline"], fit_font(spec["subline"], 500, 32, W - 120), t["sub"])
 
     bf = font(800, 28)
     label = "TasteDesk"
     lw = text_width(label, bf)
-    d.rounded_rectangle([W - lw - 110, H - 86, W - 40, H - 36], radius=25, fill=(52, 211, 153))
-    draw_text(d, W - lw - 75, H - 80, label, bf, (11, 18, 22))
+    d.rounded_rectangle([W - lw - 110, H - 86, W - 40, H - 36], radius=25, fill=t["bf"])
+    draw_text(d, W - lw - 75, H - 80, label, bf, t["bt"])
 
     img.convert("RGB").save(out, optimize=True)
     return out
