@@ -1,0 +1,11 @@
+{
+  "feature": "iiko-integration",
+  "theme": "ocean",
+  "headline": ["Կայքը չի վաճառում", "այն, ինչ վերջացել է"],
+  "subline": "Մենյուն ու պատվերները սինքրոն են iiko-ի հետ",
+  "cards": [
+    {"title": "Նոր պատվեր կայքից", "sub": "Double Cheeseburger, Coca-Cola · 4 300 ֏", "color": "blue", "icon": "card"},
+    {"title": "Պատվերն արդեն iiko-ում է", "sub": "Եվ նույն պահին՝ պատվերների բորդին", "color": "amber", "icon": "bell"},
+    {"title": "Ստոպ-լիստ՝ Chocolate Cake", "sub": "Կայքում ավտոմատ թաքցվեց, ոչ ոք չի պատվիրի", "color": "green", "icon": "check"}
+  ]
+}
