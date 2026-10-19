@@ -99,6 +99,18 @@
         "facebook": "6ad3c158769b4579348e1220"
       },
       "caption_hook": "Ուրբաթ երեկո, սրահը լիքն է, իսկ 5-րդ սեղանի հյուրերն արդեն մի քանի անգամ ձեռք են բարձրացրել, որ մատուցողը գա և պատվերը վերցնի 🙋"
+    },
+    {
+      "date": "2026-10-19",
+      "feature": "iiko-integration",
+      "theme": "ocean",
+      "image": "posts/2026-10-19-iiko-integration.png",
+      "spec": "specs/2026-10-19-iiko-integration.json",
+      "buffer": {
+        "instagram": "6ad614c6b0a056e4b94ad3af",
+        "facebook": "6ad614d3e21b24048f4a0514"
+      },
+      "caption_hook": "Շաբաթ երեկո, Chocolate Cake-ն արդեն վերջացել է ու iiko-ում ստոպ-լիստում է, իսկ կայքում հաճախորդը հենց նոր այն ավելացրեց պատվերին 🍰"
     }
   ]
 }
