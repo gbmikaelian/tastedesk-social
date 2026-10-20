@@ -111,6 +111,18 @@
         "facebook": "6ad614d3e21b24048f4a0514"
       },
       "caption_hook": "Շաբաթ երեկո, Chocolate Cake-ն արդեն վերջացել է ու iiko-ում ստոպ-լիստում է, իսկ կայքում հաճախորդը հենց նոր այն ավելացրեց պատվերին 🍰"
+    },
+    {
+      "date": "2026-10-20",
+      "feature": "all-channels",
+      "theme": "cream",
+      "image": "posts/2026-10-20-all-channels.png",
+      "spec": "specs/2026-10-20-all-channels.json",
+      "buffer": {
+        "instagram": "6ad7b91fa2b5cb9c49fbf71c",
+        "facebook": "6ad7b92b1a1ce97999a5347c"
+      },
+      "caption_hook": "Կիրակի ճաշին մենեջերը հեռախոսով պատվեր է ընդունում, կասայի մոտ հյուրը պատվիրում է տեղում, իսկ կայքի պատվերները մեկ այլ էկրանին են, և ոչ ոք չգիտի, թե որն էր առաջինը 📱"
     }
   ]
 }
