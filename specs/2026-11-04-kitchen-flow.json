@@ -1,0 +1,11 @@
+{
+  "feature": "kitchen-flow",
+  "theme": "mint",
+  "headline": ["Ոչ ոք չի մտնում", "խոհանոց հարցնելու"],
+  "subline": "Ամեն պատվերի փուլը բոլորը տեսնում են էկրանին",
+  "cards": [
+    {"title": "Նոր պատվեր #418", "sub": "Double Cheeseburger, Latte · 5 600 ֏", "color": "blue", "icon": "bell"},
+    {"title": "Խոհանոցում տպվեց տոմսը", "sub": "Ընդունված · Պատրաստվում է, հերթով", "color": "amber", "icon": "printer"},
+    {"title": "#418՝ «Պատրաստ է»", "sub": "Հաճախորդը տեսավ live, խոհարարը չշեղվեց", "color": "green", "icon": "check"}
+  ]
+}
