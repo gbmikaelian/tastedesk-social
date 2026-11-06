@@ -220,7 +220,51 @@ def badge(img, src, x, y):
     img.alpha_composite(b.rotate(-8, resample=Image.BICUBIC), (x, y))
 
 
+def cover(src):
+    im = Image.open(ROOT / src).convert("RGB")
+    k = max(W / im.width, H / im.height)
+    im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
+    x, y = (im.width - W) // 2, (im.height - H) // 2
+    return im.crop((x, y, x + W, y + H)).convert("RGBA")
+
+
+def shade(img, top_h, top_a, bottom_h, bottom_a):
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(ov)
+    for y in range(top_h):
+        d.line([(0, y), (W, y)], fill=(0, 0, 0, int(top_a * (1 - y / top_h) ** 1.4)))
+    for y in range(bottom_h):
+        d.line([(0, H - 1 - y), (W, H - 1 - y)], fill=(0, 0, 0, int(bottom_a * (1 - y / bottom_h) ** 1.4)))
+    return Image.alpha_composite(img, ov)
+
+
+def render_photo(spec, out):
+    accent = tuple(spec.get("accent", (52, 211, 153)))
+    img = shade(cover(spec["photo"]), 560, 215, 620, 225)
+    d = ImageDraw.Draw(img)
+    y = 72
+    for i, line in enumerate(spec["headline"][:2]):
+        f = fit_font(line, 800, 74, W - 120)
+        draw_text(d, 60, y, line, f, (255, 255, 255) if i == 0 else accent)
+        y += 90
+    if spec.get("subline"):
+        draw_text(d, 60, y + 14, spec["subline"], fit_font(spec["subline"], 500, 34, W - 120), (230, 235, 235))
+    cards = spec.get("cards", [])[:2]
+    slots = {1: [(60, 1060, 820, 140)], 2: [(60, 900, 800, 140), (200, 1070, 800, 140)]}[len(cards)] if cards else []
+    for c, (x, yy, w, h) in zip(cards, slots):
+        card(img, x, yy, w, h, c)
+    bf = font(800, 28)
+    lw = text_width("TasteDesk", bf)
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle([W - lw - 110, H - 86, W - 40, H - 36], radius=25, fill=accent)
+    draw_text(d, W - lw - 75, H - 80, "TasteDesk", bf, (11, 18, 22))
+    img.convert("RGB").save(out, optimize=True)
+    return out
+
+
 def render(spec, out):
+    if spec.get("photo"):
+        return render_photo(spec, out)
     t = THEMES[spec.get("theme", "night")]
     img = background(t)
     front, back = spec.get("front"), spec.get("back")
