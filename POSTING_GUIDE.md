@@ -40,7 +40,6 @@ Write `specs/<YYYY-MM-DD>-<id>.json`, then render with
 {
   "feature": "<id>",
   "photo": "bg/<date>-<id>.png",
-  "accent": [253, 186, 116],
   "headline": ["White first line", "Accent second line"],
   "subline": "One short supporting line",
   "cards": [
@@ -49,7 +48,7 @@ Write `specs/<YYYY-MM-DD>-<id>.json`, then render with
 }
 ```
 
-- `accent` (RGB) colors the second headline line and the TasteDesk badge. Pick one that suits the photo: warm photos `[253,186,116]`, cool/night `[125,211,252]`, green `[52,211,153]`, pink `[240,171,252]`, yellow `[250,204,21]`.
+- Brand: the renderer always draws the real TasteDesk logo (from tastedesk.am, saved in `brand/logo.svg`: teal #138675 plate icon + "Taste**Desk**" wordmark) in a white pill bottom right, and colors the second headline line in the brand teal. Do not set `accent`, do not add any other logo, badge or brand text, and keep the bottom-right corner of the photo free for the logo.
 - Headline = the result for the owner in plain words ("Վերջացածը կայքում չի երևում", "Սեղանից պատվեր՝ առանց մատուցողի"). Not a UI description.
 - 1 or 2 cards (2 by default). Card 1 = the trigger (what the customer or staff did), card 2 = what the system did automatically / what the other role sees. Never form fields.
 - Length limits: headline lines up to 20 characters, subline up to 48, card title up to 26, sub up to 40.

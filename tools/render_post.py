@@ -220,6 +220,41 @@ def badge(img, src, x, y):
     img.alpha_composite(b.rotate(-8, resample=Image.BICUBIC), (x, y))
 
 
+BRAND = (19, 134, 117)
+BRAND_LIGHT = (94, 224, 200)
+
+
+def logo(img, right, bottom, scale=1.0, light=True):
+    s = 2
+    size = int(64 * scale)
+    tf = font(800, int(36 * scale))
+    tw = text_width("Taste", tf) + text_width("Desk", tf)
+    pad, gap = int(16 * scale), int(14 * scale)
+    w, h = pad + size + gap + int(tw) + pad + int(6 * scale), size + 2 * pad
+    layer = Image.new("RGBA", ((w + 60) * s, (h + 60) * s), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    if light:
+        d.rounded_rectangle([30 * s, 36 * s, (30 + w) * s, (36 + h) * s], radius=h * s // 2, fill=(0, 0, 0, 90))
+    layer = layer.filter(ImageFilter.GaussianBlur(14 * s))
+    d = ImageDraw.Draw(layer)
+    ox, oy = 30, 30
+    if light:
+        d.rounded_rectangle([ox * s, oy * s, (ox + w) * s, (oy + h) * s], radius=h * s // 2, fill=(255, 255, 255, 245))
+    k = size / 44 * s
+    ix, iy = (ox + pad) * s, (oy + pad) * s
+    d.rounded_rectangle([ix, iy, ix + 44 * k, iy + 44 * k], radius=13 * k, fill=BRAND)
+    d.ellipse([ix + 12 * k, iy + 10 * k, ix + 32 * k, iy + 30 * k], outline="white", width=max(1, round(2.6 * k)))
+    d.ellipse([ix + 18.6 * k, iy + 16.6 * k, ix + 25.4 * k, iy + 23.4 * k], fill="white")
+    d.rounded_rectangle([ix + 10 * k, iy + 33 * k, ix + 34 * k, iy + 35.6 * k], radius=1.3 * k, fill=(255, 255, 255, 190))
+    layer = layer.resize((w + 60, h + 60), Image.LANCZOS)
+    d = ImageDraw.Draw(layer)
+    tx = ox + pad + size + gap
+    ty = oy + h // 2 - int(36 * scale * 0.68)
+    draw_text(d, tx, ty, "Taste", tf, (17, 24, 39) if light else (255, 255, 255))
+    draw_text(d, tx + text_width("Taste", tf), ty, "Desk", tf, BRAND)
+    img.alpha_composite(layer, (right - w - 30, bottom - h - 30))
+
+
 def cover(src):
     im = Image.open(ROOT / src).convert("RGB")
     k = max(W / im.width, H / im.height)
@@ -239,7 +274,7 @@ def shade(img, top_h, top_a, bottom_h, bottom_a):
 
 
 def render_photo(spec, out):
-    accent = tuple(spec.get("accent", (52, 211, 153)))
+    accent = tuple(spec.get("accent", BRAND_LIGHT))
     img = shade(cover(spec["photo"]), 560, 215, 620, 225)
     d = ImageDraw.Draw(img)
     y = 72
@@ -250,14 +285,10 @@ def render_photo(spec, out):
     if spec.get("subline"):
         draw_text(d, 60, y + 14, spec["subline"], fit_font(spec["subline"], 500, 34, W - 120), (230, 235, 235))
     cards = spec.get("cards", [])[:2]
-    slots = {1: [(60, 1060, 820, 140)], 2: [(60, 900, 800, 140), (200, 1070, 800, 140)]}[len(cards)] if cards else []
+    slots = {1: [(60, 1010, 820, 140)], 2: [(60, 850, 800, 140), (200, 1020, 800, 140)]}[len(cards)] if cards else []
     for c, (x, yy, w, h) in zip(cards, slots):
         card(img, x, yy, w, h, c)
-    bf = font(800, 28)
-    lw = text_width("TasteDesk", bf)
-    d = ImageDraw.Draw(img)
-    d.rounded_rectangle([W - lw - 110, H - 86, W - 40, H - 36], radius=25, fill=accent)
-    draw_text(d, W - lw - 75, H - 80, "TasteDesk", bf, (11, 18, 22))
+    logo(img, W - 40, H - 36)
     img.convert("RGB").save(out, optimize=True)
     return out
 
@@ -296,11 +327,7 @@ def render(spec, out):
     if spec.get("subline"):
         draw_text(d, 60, y + 12, spec["subline"], fit_font(spec["subline"], 500, 32, W - 120), t["sub"])
 
-    bf = font(800, 28)
-    label = "TasteDesk"
-    lw = text_width(label, bf)
-    d.rounded_rectangle([W - lw - 110, H - 86, W - 40, H - 36], radius=25, fill=t["bf"])
-    draw_text(d, W - lw - 75, H - 80, label, bf, t["bt"])
+    logo(img, W - 40, H - 36)
 
     img.convert("RGB").save(out, optimize=True)
     return out
