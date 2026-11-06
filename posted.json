@@ -147,6 +147,19 @@
         "facebook": "6aeaf006c63bd995bd268e79"
       },
       "caption_hook": "Շաբաթ ճաշին մենեջերը երրորդ անգամ մտնում է խոհանոց՝ հարցնելու, թե #418-ը պատրա՞ստ է, իսկ խոհարարը թողնում է գրիլը, որ պատասխանի 🍳"
+    },
+    {
+      "date": "2026-11-06",
+      "feature": "dashboard",
+      "scene": "Restaurant owner (40s man) alone at the bar counter of a closed burger place, late night, checking his phone",
+      "photo": "bg/2026-11-06-dashboard.png",
+      "image": "posts/2026-11-06-dashboard.png",
+      "spec": "specs/2026-11-06-dashboard.json",
+      "buffer": {
+        "instagram": "6aeda7b2c1e74b84e5e1133e",
+        "facebook": "6aeda7bd86fe9b83798b424e"
+      },
+      "caption_hook": "Կեսգիշեր է, սրահն արդեն փակ է, աթոռները շրջված են սեղաններին, իսկ սեփականատերը բարի մոտ փորձում է հասկանալ, թե ինչպես անցավ օրը՝ թղթե չեկերից, մեսենջերից ու մենեջերի հաղորդագրություններից 🧾"
     }
   ]
 }
