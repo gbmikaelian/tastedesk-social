@@ -160,6 +160,19 @@
         "facebook": "6aeda7bd86fe9b83798b424e"
       },
       "caption_hook": "Կեսգիշեր է, սրահն արդեն փակ է, աթոռները շրջված են սեղաններին, իսկ սեփականատերը բարի մոտ փորձում է հասկանալ, թե ինչպես անցավ օրը՝ թղթե չեկերից, մեսենջերից ու մենեջերի հաղորդագրություններից 🧾"
+    },
+    {
+      "date": "2026-11-08",
+      "feature": "menu-management",
+      "scene": "Woman cook (30s) in a restaurant kitchen, morning before opening, photographing a fresh pepperoni pizza with her phone",
+      "photo": "bg/2026-11-08-menu-management.png",
+      "image": "posts/2026-11-08-menu-management.png",
+      "spec": "specs/2026-11-08-menu-management.json",
+      "buffer": {
+        "instagram": "6af06fd9004e4879a7b95798",
+        "facebook": "6af06fe451492b796e3ab9cc"
+      },
+      "caption_hook": "Շաբաթ առավոտ, բացվելուց առաջ, խոհարարը հանում է նոր պիցցան ու լուսանկարում այն, իսկ առանց TasteDesk-ի այն կայքում կհայտնվեր միայն այն օրը, երբ ինչ-որ մեկը ժամանակ գտներ մենյուն թարմացնելու 🍕"
     }
   ]
 }
