@@ -173,6 +173,20 @@
         "facebook": "6af06fe451492b796e3ab9cc"
       },
       "caption_hook": "Շաբաթ առավոտ, բացվելուց առաջ, խոհարարը հանում է նոր պիցցան ու լուսանկարում այն, իսկ առանց TasteDesk-ի այն կայքում կհայտնվեր միայն այն օրը, երբ ինչ-որ մեկը ժամանակ գտներ մենյուն թարմացնելու 🍕"
+    },
+    {
+      "date": "2026-11-09",
+      "feature": "staff-roles",
+      "scene": "Young male courier (20s) on the sidewalk outside a burger restaurant at dusk, checking his phone with a takeaway bag",
+      "photo": "bg/2026-11-09-staff-roles.png",
+      "image": "posts/2026-11-09-staff-roles.png",
+      "spec": "specs/2026-11-09-staff-roles.json",
+      "buffer": {
+        "instagram": "6af18b38e29b1359f0e0889b",
+        "facebook": "6af18b39e44ddbb57c45295d"
+      },
+      "status": "awaiting_approval",
+      "caption_hook": "Երեկոյան պիկին առաքիչը կանգնած է ռեստորանի դռան մոտ և հեռախոսում թերթում է բոլոր պատվերները՝ սրահի, զանգերի, կայքի, որ գտնի, թե որոնք են արդեն պատրաստ իր համար 🛵"
     }
   ]
 }
