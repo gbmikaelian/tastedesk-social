@@ -182,11 +182,19 @@
       "image": "posts/2026-11-09-staff-roles.png",
       "spec": "specs/2026-11-09-staff-roles.json",
       "buffer": {
+        "instagram": "6af1a33072554a06de3d12f1",
+        "facebook": "6af1a33a68cee50bcba0d894"
+      },
+      "status": "published",
+      "caption_hook": "Երեկոյան պիկին առաքիչը կանգնած է ռեստորանի դռան մոտ և հեռախոսում թերթում է բոլոր պատվերները՝ սրահի, զանգերի, կայքի, որ գտնի, թե որոնք են արդեն պատրաստ իր համար 🛵",
+      "buffer_drafts": {
         "instagram": "6af18b38e29b1359f0e0889b",
         "facebook": "6af18b39e44ddbb57c45295d"
       },
-      "status": "awaiting_approval",
-      "caption_hook": "Երեկոյան պիկին առաքիչը կանգնած է ռեստորանի դռան մոտ և հեռախոսում թերթում է բոլոր պատվերները՝ սրահի, զանգերի, կայքի, որ գտնի, թե որոնք են արդեն պատրաստ իր համար 🛵"
+      "links": {
+        "instagram": "https://www.instagram.com/p/DfhI7Ixm6XL/",
+        "facebook": "https://facebook.com/1328531800339643_122135305827466489"
+      }
     }
   ]
 }
