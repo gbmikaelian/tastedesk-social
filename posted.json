@@ -195,6 +195,28 @@
         "instagram": "https://www.instagram.com/p/DfhI7Ixm6XL/",
         "facebook": "https://facebook.com/1328531800339643_122135305827466489"
       }
+    },
+    {
+      "date": "2026-11-18",
+      "feature": "order-journey-reel",
+      "format": "reel",
+      "related": [
+        "branded-site",
+        "live-order-board",
+        "auto-printing",
+        "kitchen-flow",
+        "courier-role",
+        "live-tracking"
+      ],
+      "scene": "17s reel: woman (20s) ordering on her sofa at home in the evening -> kitchen printer ticket -> cook assembling a burger -> courier handing the bag at her apartment door",
+      "photo": "bg/reel-2026-11-18/",
+      "video": "posts/2026-11-18-order-journey-reel.mp4",
+      "caption_hook": "Երեկոյան 19:40-ին հաճախորդը տանը պատվիրում է ընթրիք, իսկ ռեստորանում ոչ ոք չպետք է զանգ ընդունի, պատվերը թղթի վրա գրի ու վազի խոհանոց 🍔",
+      "status": "awaiting_approval",
+      "buffer_drafts": {
+        "instagram": "6afd8e3bf712d4c5a239b6da",
+        "facebook": "6afd8e3c3cc95fb47ce8ce4f"
+      }
     }
   ]
 }
