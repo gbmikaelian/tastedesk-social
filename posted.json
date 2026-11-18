@@ -212,10 +212,21 @@
       "photo": "bg/reel-2026-11-18/",
       "video": "posts/2026-11-18-order-journey-reel.mp4",
       "caption_hook": "Երեկոյան 19:40-ին հաճախորդը տանը պատվիրում է ընթրիք, իսկ ռեստորանում ոչ ոք չպետք է զանգ ընդունի, պատվերը թղթի վրա գրի ու վազի խոհանոց 🍔",
-      "status": "awaiting_approval",
+      "status": "published",
       "buffer_drafts": {
         "instagram": "6afd8e3bf712d4c5a239b6da",
         "facebook": "6afd8e3c3cc95fb47ce8ce4f"
+      },
+      "buffer_posts": {
+        "instagram_reel": "6afd8e3bf712d4c5a239b6da",
+        "facebook_reel": "6afd8e3c3cc95fb47ce8ce4f",
+        "instagram_story": "6afd8ec7c9f673f3ba7c111a",
+        "facebook_story": "6afd8ed2c9f673f3ba7c189f"
+      },
+      "links": {
+        "instagram": "https://www.instagram.com/reel/Df4a6M9DK_C/",
+        "facebook": "https://facebook.com/1328531800339643_122138140947466489",
+        "instagram_story": "https://www.instagram.com/stories/tastedesk.am/4033092055659111002"
       }
     }
   ]
