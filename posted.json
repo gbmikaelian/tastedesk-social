@@ -243,10 +243,21 @@
       "scene": "13s reel (Gemini-generated 10s + TasteDesk end card): Friday rush in a burger restaurant; phone, walk-in, home app and table QR orders merge on one tablet, kitchen printer, burger montage, calm cashier",
       "video": "posts/2026-11-20-rush-hour-reel.mp4",
       "caption_hook": "Ուրբաթ երեկո է, սրահը լիքն է, հեռախոսը զանգում է, դռնից նոր հյուր է մտնում, իսկ կայքից ու սեղաններից պատվերները շարունակում են գալ 🔥",
-      "status": "awaiting_approval",
+      "status": "published",
       "buffer_drafts": {
         "instagram": "6b001c83e0dc26301cccba91",
         "facebook": "6b001c83876f1e45f7b7d649"
+      },
+      "buffer_posts": {
+        "instagram_reel": "6b001c83e0dc26301cccba91",
+        "facebook_reel": "6b001c83876f1e45f7b7d649",
+        "instagram_story": "6b001cfd105c12945d83327f",
+        "facebook_story": "6b001d08e0dc26301ccd01dc"
+      },
+      "links": {
+        "instagram": "https://www.instagram.com/reel/Df9aXRjDqQ3/",
+        "facebook": "https://facebook.com/1328531800339643_122138861655466489",
+        "instagram_story": "https://www.instagram.com/stories/tastedesk.am/4034496946299434112"
       }
     }
   ]
