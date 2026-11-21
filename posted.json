@@ -259,6 +259,23 @@
         "facebook": "https://facebook.com/1328531800339643_122138861655466489",
         "instagram_story": "https://www.instagram.com/stories/tastedesk.am/4034496946299434112"
       }
+    },
+    {
+      "date": "2026-11-21",
+      "feature": "delivery-zones",
+      "format": "reel",
+      "related": [
+        "address-autocomplete",
+        "opening-hours"
+      ],
+      "scene": "12s reel (Gemini video, its logo ending cut, TasteDesk end card): man (20s) on a balcony of an outskirts apartment block at night ordering, map zone on phone, kitchen tablet with silent desk phone, courier on scooter, handoff at apartment door",
+      "video": "posts/2026-11-21-delivery-zones-reel.mp4",
+      "caption_hook": "Ուշ երեկո է, քաղաքի ծայրամասում, պատշգամբում կանգնած մարդը ուզում է բուրգեր պատվիրել, բայց չգիտի՝ առաքումն այստեղ քանի՞ է արժենալու, ու արդյոք ընդհանրապես կբերեն 🛵",
+      "status": "awaiting_approval",
+      "buffer_drafts": {
+        "instagram": "6b0190f7d5eabfb8cc2dc377",
+        "facebook": "6b0190f7d864a0110543de70"
+      }
     }
   ]
 }
